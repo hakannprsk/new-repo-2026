@@ -4,7 +4,7 @@ import TurndownService from 'turndown';
 import { copyToClipboard } from '@/lib/utils';
 import { Copy, Check } from 'lucide-react';
 
-const td = new TurndownService({ headingStyle: 'atx', codeBlockStyle: 'fenced' });
+const TurndownService = require('turndown');
 
 export default function HtmlToMarkdown() {
   const [input, setInput] = useState('<h1>Başlık</h1>\n<p>Bu bir <strong>paragraf</strong>tır.</p>\n<ul>\n  <li>Madde 1</li>\n  <li>Madde 2</li>\n</ul>');
